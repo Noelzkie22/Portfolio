@@ -1,6 +1,6 @@
 html {
-  font-size: 15px; 
-}*
+  font-size: 14px; 
+}* 
 
 
 {
@@ -96,7 +96,7 @@ header {
 }
 
 section{
-  min-height:100h;
+  min-height:100vh;
   padding:6rem 8%;
   width:100%;
   position:relative;
@@ -105,6 +105,7 @@ section{
   display:flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   
 }
 .about .about-container{
@@ -183,7 +184,7 @@ section{
 }
 
 .section-title{
-   text-align:center ;
+   text-align:left ;
    font-size: 3rem;
    font-weight: 600;
    margin-bottom: 2rem;
@@ -235,7 +236,7 @@ section{
   }
 
   ::-webkit-scrollbar{
-    width: 20px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track{
     background-color: rgb(219,219,219);
@@ -245,5 +246,78 @@ section{
     background: linear-gradient(to buttom,rgb(255,0,255),rgb(0,157,255));
   }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
 
+.project-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Buttons hidden until the card is hovered */
+.btn-grp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-grp .btn {
+  margin-top: 0;
+}
+
+/* Hover the card: turns black, buttons appear */
+.project-card:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-10px);
+}
+
+.project-card:hover .btn-grp {
+  opacity: 1;
+}
+
+.project-card:hover .btn {
+  border: 2px solid white;
+  color: white;
+}
+
+/* Hover a button: turns white with black text */
+.project-card:hover .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (hover: none) {
+  .btn-grp {
+    opacity: 1;
+  }
+}
