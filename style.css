@@ -1,4 +1,9 @@
-* {
+html {
+  font-size: 15px; 
+}*
+
+
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +23,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  gap: 5rem;
+  gap: 3rem;
 
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
@@ -70,7 +75,7 @@ header {
 }
 
 .visit-btn{
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border: none;
   font-weight: 500;
   font-size: 1rem;
@@ -92,7 +97,7 @@ header {
 
 section{
   min-height:100h;
-  padding:8rem 12%;
+  padding:6rem 8%;
   width:100%;
   position:relative;
 }
@@ -106,12 +111,12 @@ section{
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:10rem;
+    gap:5rem;
 
 }
 
 .about img{
-  width:30vw;
+  width:22vw;
   border-radius: 50%;
 }
 .info-box{
@@ -124,21 +129,21 @@ section{
 }
 
 .info-box h3{
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    font-weight: 500;
    opacity: 0.8;
 
 }
 
 .info-box h1{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 .info-box span{
   background: linear-gradient(to right,rgb(255,0,255),rgb(0,157,255));
   background-clip: text;
   color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .btn-group{
@@ -176,6 +181,69 @@ section{
 .socials i:hover{
   transform: scale(1.1);
 }
+
+.section-title{
+   text-align:center ;
+   font-size: 3rem;
+   font-weight: 600;
+   margin-bottom: 2rem;
+   }
+
+   .experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+   }
+
+  .experience img{
+     width:18vw;
+     border-radius: 3rem;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  }
+.grid-card{
+  border:2px solid black;
+  border-radius:  2rem; ;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  }
+  .grid-card:hover{
+    transform:scale(1.02) ;
+    background-color: black;
+    color: white;
+  }
+  .grid-card i{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-card span{
+    font-size:1.2rem ;
+    font-weight:500 ;
+    background: linear-gradient(to right,rgb(255,0,255),rgb(0,157,255));
+    background-clip: text;
+    color: transparent;
+  }
+
+  ::-webkit-scrollbar{
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: rgb(219,219,219);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(to buttom,rgb(255,0,255),rgb(0,157,255));
+  }
 
 
 
