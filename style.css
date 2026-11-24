@@ -311,7 +311,7 @@ section{
   color: black;
 }
 
-@media (hover: none) {
+@media{
   .btn-grp {
     opacity: 1;
   }
@@ -405,7 +405,7 @@ footer ul li a{
   flex-direction: column;
  }
  .input-box input{
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem 1rem 3.5rem;
   font-size:1.1rem;
  }
  .input-box i{
@@ -413,6 +413,9 @@ footer ul li a{
  }
 
 
+ .btn-grp{
+    opacity: 1;
+  }
 }
 
 
@@ -445,17 +448,16 @@ header .visit-btn{
 }
 
 .input-box input{
-  padding:1rem 2rem;
+  padding:1rem 1.5rem 1rem 3.5rem;
   font-size: 1.1rem;
 }
 
 .input-box input::placeholder{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .input-box i{
-  display: none;
-  font-size:1.3rem;
+ font-size:1.3rem;
 }
 
 .grid{
@@ -512,9 +514,8 @@ header .visit-btn{
   }
 
   .input-box input{
-    padding: 0.5rem 3rem;
-    width: 80%;
-    font-size: 1.5rem;
+    padding: 0.9rem 1.2rem 0.9rem 3.2rem;
+     font-size: 1rem;
   }
 
   footer ul{
